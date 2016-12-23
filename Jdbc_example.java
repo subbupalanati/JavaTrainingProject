@@ -48,4 +48,18 @@ public class Jdbc_example {
 	}
 
 	}
+/*student table created
+one row created
+two rows created
+before update student table contents are :
+10  subbu  ms 91
+11  siva  ms 95
+after update student table contents are 
+10  subbu  ms 98
+11  siva  ms 95
+after Delete student table contents are 
+10  subbu  ms 98
+*/
+
+
   
