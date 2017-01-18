@@ -23,7 +23,7 @@ public class LoginController {
 		
 String username=request.getParameter("username");
 String password=request.getParameter("password");
-if(username =="subbu" && password=="1234")
+if(username.equals("subbu") && password.equals("1234"))
 {
 	return "success";
 }
