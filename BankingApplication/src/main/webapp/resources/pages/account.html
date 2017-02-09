@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+ <style type="text/css">
+    .container {
+        width: 500px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    </head>
+<body>
+<div ng-controller="AccountController">
+<form action="deposit" method="post">
+ <div ng-repeat="user in user">
+ <br>Name: {{user.firstname+"  "+user.lastname}}
+ <br> AccountNumber: {{user.accountNumber}}
+ </div>
+ <br> Amount: <input typr="text" name="amount">
+ <br>
+       Account:<br>
+       <select>
+       <option value="savings">Savings</option>
+       <option value="checking">Checking</option>
+       </select>
+       <br><br>
+       <button type="button">Deposit</button>
+       
+</form>
+
+</div>
+</body>
+</html>
